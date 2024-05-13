@@ -1,0 +1,62 @@
+body {
+    margin-top: 30px ;
+    background-color: #e7beed; 
+    font-family: monospace;
+    text-align: center;
+}
+#game-title{
+    margin-top: 20px;
+}
+
+section {
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 75px;
+}
+
+#board {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* specifies width of cell's row*/
+    grid-template-rows: repeat(3, 100px); /* specifies height of cell's row*/
+    gap: 2px;
+    margin-top: 20px;
+}
+.cell {
+    font-size: 50px;
+    font-family: monospace ;
+    border: 1px solid #000000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    margin-top: 50px;
+    font-size: larger;
+}
+#restart
+{
+    margin-bottom: 20px;
+}
+
+/* The CSS properties `grid-template-columns` and `grid-template-rows` are used to define the size and number of columns and rows in a CSS Grid layout. 
+
+Here’s what each part of `grid-template-columns: repeat(3, 100px);` and `grid-template-rows: repeat(3, 100px);` means:
+
+1. **`repeat(3, 100px)`**: This part specifies that the grid should repeat the specified pattern three times. In this case, it repeats a column or row with a width or height of `100px` three times.
+
+2. **`100px`**: This part defines the size of each column or row. In this example, each column and row will have a fixed size of `100px`.
+
+So, the combination of `grid-template-columns: repeat(3, 100px);` and `grid-template-rows: repeat(3, 100px);` sets up a grid layout with 3 columns and 3 rows, each with a fixed size of `100px`. 
+
+This is commonly used for creating grid-based layouts where you want a specific number of columns and rows with consistent sizes. In the context of the Tic Tac Toe game, this layout ensures that the game board consists of 3 rows and 3 columns, with each cell having a fixed size of `100px`. */
+
+/* What do grid-template-columns repeat do?
+Instead, we can write this: grid-template-columns: repeat(5, 1fr); In the example above, the repeat() function lets us specify how many columns we want ( 5 ), and what size they should all be ( 1fr — or one fraction of the available space) */
