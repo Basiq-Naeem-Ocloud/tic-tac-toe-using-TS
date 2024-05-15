@@ -81,7 +81,7 @@ function restartGame(): void {
 
     // Reset game state variables using the resetGameState function
     resetGameState();
-    
+
 }
 
 if (restart) {
